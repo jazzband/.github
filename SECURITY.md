@@ -5,7 +5,7 @@ please **do NOT open public GitHub issues, pull requests or anything
 that could leak sensitive information to the public**.
 
 Jazzband asks you to instead responsibly report the security issue
-by email to security@jazzband.co instead.
+by email to security@jazzband.co.
 
 Your email is sent to the Jazzband roadies, the people that maintain
 the Jazzband organization. A member of the roadies will respond to
