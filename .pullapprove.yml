@@ -1,0 +1,20 @@
+version: 3
+
+groups:
+  github-workflows:
+    conditions:
+    - "'.github/workflows/*' in files"
+    reviewers:
+      teams:
+      - roadies
+    reviews:
+      required: 1
+
+  pullapprove:
+    conditions:
+    - "'.pullapprove.yml' in files"
+    reviewers:
+      teams:
+      - roadies
+    reviews:
+      required: 1
