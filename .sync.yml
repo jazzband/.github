@@ -1,60 +1,60 @@
 group:
-  repos: |
-    jazzband/contextlib2
-    jazzband/django-admin2
-    jazzband/django-analytical
-    jazzband/django-auditlog
-    jazzband/django-authority
-    jazzband/django-axes
-    jazzband/django-celery-monitor
-    jazzband/django-configurations
-    jazzband/django-constance
-    jazzband/django-dbtemplates
-    jazzband/django-ddp
-    jazzband/django-debug-toolbar
-    jazzband/django-defender
-    jazzband/django-discover-jenkins
-    jazzband/django-downloadview
-    jazzband/django-embed-video
-    jazzband/django-flatblocks
-    jazzband/django-floppyforms
-    jazzband/django-formtools
-    jazzband/django-hosts
-    jazzband/django-ical
-    jazzband/django-model-utils
-    jazzband/django-mongonaut
-    jazzband/django-newsletter
-    jazzband/django-nose
-    jazzband/django-oauth-toolkit
-    jazzband/django-payments
-    jazzband/django-pipeline
-    jazzband/django-push-notifications
-    jazzband/django-queued-storage
-    jazzband/django-redis
-    jazzband/django-redshift-backend
-    jazzband/django-rest-framework-simplejwt
-    jazzband/django-robots
-    jazzband/django-silk
-    jazzband/django-simple-history
-    jazzband/django-simple-menu
-    jazzband/django-smart-selects
-    jazzband/django-sortedm2m
-    jazzband/django-sorter
-    jazzband/django-taggit
-    jazzband/django-tinymce
-    jazzband/django-user-sessions
-    jazzband/django-voting
-    jazzband/django-widget-tweaks
-    jazzband/docopt-ng
-    jazzband/geojson
-    jazzband/help
-    jazzband/imaplib2
-    jazzband/jsonmodels
-    jazzband/pip-tools
-    jazzband/prettytable
-    jazzband/sorl-thumbnail
-    jazzband/tablib
-    jazzband/website
+  repos:
+  - jazzband/contextlib2
+  - jazzband/django-admin2
+  - jazzband/django-analytical
+  - jazzband/django-auditlog
+  - jazzband/django-authority
+  - jazzband/django-axes
+  - jazzband/django-celery-monitor
+  - jazzband/django-configurations
+  - jazzband/django-constance
+  - jazzband/django-dbtemplates
+  - jazzband/django-ddp
+  - jazzband/django-debug-toolbar
+  - jazzband/django-defender
+  - jazzband/django-discover-jenkins
+  - jazzband/django-downloadview
+  - jazzband/django-embed-video
+  - jazzband/django-flatblocks
+  - jazzband/django-floppyforms
+  - jazzband/django-formtools
+  - jazzband/django-hosts
+  - jazzband/django-ical
+  - jazzband/django-model-utils
+  - jazzband/django-mongonaut
+  - jazzband/django-newsletter
+  - jazzband/django-nose
+  - jazzband/django-oauth-toolkit
+  - jazzband/django-payments
+  - jazzband/django-pipeline
+  - jazzband/django-push-notifications
+  - jazzband/django-queued-storage
+  - jazzband/django-redis
+  - jazzband/django-redshift-backend
+  - jazzband/django-rest-framework-simplejwt
+  - jazzband/django-robots
+  - jazzband/django-silk
+  - jazzband/django-simple-history
+  - jazzband/django-simple-menu
+  - jazzband/django-smart-selects
+  - jazzband/django-sortedm2m
+  - jazzband/django-sorter
+  - jazzband/django-taggit
+  - jazzband/django-tinymce
+  - jazzband/django-user-sessions
+  - jazzband/django-voting
+  - jazzband/django-widget-tweaks
+  - jazzband/docopt-ng
+  - jazzband/geojson
+  - jazzband/help
+  - jazzband/imaplib2
+  - jazzband/jsonmodels
+  - jazzband/pip-tools
+  - jazzband/prettytable
+  - jazzband/sorl-thumbnail
+  - jazzband/tablib
+  - jazzband/website
   files:
     - source: configs/.pullapprove.yml
       dest: .pullapprove.yml

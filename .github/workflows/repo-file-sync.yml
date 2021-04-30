@@ -1,4 +1,4 @@
-name: Sync Files
+name: Sync files
 on:
   push:
     branches:
@@ -13,11 +13,12 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run GitHub File Sync
-        uses: BetaHuhn/repo-file-sync-action@v1
+        uses: BetaHuhn/repo-file-sync-action@develop
         with:
           GH_PAT: ${{ secrets.SYNC_TOKEN }}
           ASSIGNEES: jezdez
           COMMIT_PREFIX: "Jazzband:"
+          BRANCH_PREFIX: "jazzband/sync"
           COMMIT_EACH_FILE: true
           GIT_EMAIL: jazzband-bot@users.noreply.github.com
           GIT_USERNAME: jazzband-bot
