@@ -1,10 +1,51 @@
 version: 3
+
 groups:
-  sensitive-files:
+  github-workflows:
     conditions:
-    - "'tox.ini' in files or '.pullapprove.yml' in files or '.github/workflows/*' in files or 'CODE_OF_CONDUCT.md' in files"
+    - "'.github/workflows/*' in files"
     reviewers:
       teams:
       - roadies
     reviews:
       required: 1
+    labels:
+      pending: "roadies"
+
+  pullapprove-config:
+    conditions:
+    - "'.pullapprove.yml' in files"
+    reviewers:
+      teams:
+      - roadies
+    reviews:
+      required: 1
+    labels:
+      pending: "roadies"
+
+  tox-ini:
+    conditions:
+    - "'tox.ini' in files"
+    reviewers:
+      teams:
+      - roadies
+    reviews:
+      required: 1
+    labels:
+      pending: "roadies"
+
+  code-of-conduct:
+    conditions:
+    - "'CODE_OF_CONDUCT.md' in files"
+    reviewers:
+      teams:
+      - roadies
+    reviews:
+      required: 1
+    labels:
+      pending: "roadies"
+
+notifications:
+- when: pullapprove.group.requested_reviewers
+  comment: |
+    {{ event.group }} review requested from {{ text_list(event.requested_reviewers.mentions, "and") }}
