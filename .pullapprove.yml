@@ -2,18 +2,14 @@ version: 3
 groups:
   roadies:
     conditions:
-    - >
-      contains_any_fnmatches(files, [
-        ".github/workflows/*",
-        ".pullapprove.yml",
-        "tox.ini",
-        "CODE_OF_CONDUCT.md",
-        ])
+    - "'tox.ini' in files or '.pullapprove.yml' in files or '.github/workflows/*' in files or 'CODE_OF_CONDUCT.md' in files"
     reviewers:
       teams:
       - roadies
     reviews:
       required: 1
+    labels:
+      pending: "roadies"
 notifications:
 - when: pullapprove.group.requested_reviewers
   comment: |
