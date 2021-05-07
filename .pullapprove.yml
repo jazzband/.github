@@ -1,6 +1,15 @@
 version: 3
-meta:
-  standard-conditions: &standard-conditions
+pullapprove_conditions:
+- >
+  contains_any_fnmatches(files, [
+    ".github/workflows/*",
+    ".pullapprove.yml",
+    "tox.ini",
+    "CODE_OF_CONDUCT.md",
+    ])
+groups:
+  roadies:
+    conditions:
     - >
       contains_any_fnmatches(files, [
         ".github/workflows/*",
@@ -8,10 +17,6 @@ meta:
         "tox.ini",
         "CODE_OF_CONDUCT.md",
         ])
-pullapprove_conditions: *standard-conditions
-groups:
-  roadies:
-    conditions: *standard-conditions
     reviewers:
       teams:
       - roadies
