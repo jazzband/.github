@@ -58,5 +58,4 @@ group:
   files:
     - source: configs/.pullapprove.yml
       dest: .pullapprove.yml
-    - source: CODE_OF_CONDUCT.md
-      dest: CODE_OF_CONDUCT.md
+    - CODE_OF_CONDUCT.md
