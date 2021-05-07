@@ -24,7 +24,3 @@ groups:
       required: 1
     labels:
       pending: "roadies"
-notifications:
-- when: pullapprove.group.requested_reviewers
-  comment: |
-    {{ event.group }} review requested from {{ text_list(event.requested_reviewers.mentions, "and") }}
