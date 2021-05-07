@@ -1,6 +1,6 @@
 version: 3
 groups:
-  roadies:
+  sensitive-files:
     conditions:
     - "'tox.ini' in files or '.pullapprove.yml' in files or '.github/workflows/*' in files or 'CODE_OF_CONDUCT.md' in files"
     reviewers:
@@ -8,9 +8,3 @@ groups:
       - roadies
     reviews:
       required: 1
-    labels:
-      pending: "roadies"
-notifications:
-- when: pullapprove.group.requested_reviewers
-  comment: |
-    {{ event.group }} review requested from {{ text_list(event.requested_reviewers.mentions, "and") }}
