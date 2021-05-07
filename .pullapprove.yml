@@ -1,12 +1,4 @@
 version: 3
-pullapprove_conditions:
-- >
-  contains_any_fnmatches(files, [
-    ".github/workflows/*",
-    ".pullapprove.yml",
-    "tox.ini",
-    "CODE_OF_CONDUCT.md",
-    ])
 groups:
   roadies:
     conditions:
@@ -24,3 +16,7 @@ groups:
       required: 1
     labels:
       pending: "roadies"
+notifications:
+- when: pullapprove.group.requested_reviewers
+  comment: |
+    {{ event.group }} review requested from {{ text_list(event.requested_reviewers.mentions, "and") }}
