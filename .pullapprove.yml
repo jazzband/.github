@@ -14,8 +14,6 @@ groups:
       - roadies
     reviews:
       required: 1
-    labels:
-      pending: "roadies"
 notifications:
 - when: pullapprove.group.requested_reviewers
   comment: |
