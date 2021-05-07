@@ -10,9 +10,18 @@ groups:
     reviews:
       required: 1
 
-  pullapprove:
+  pullapprove-config:
     conditions:
     - "'.pullapprove.yml' in files"
+    reviewers:
+      teams:
+      - roadies
+    reviews:
+      required: 1
+
+  tox-ini:
+    conditions:
+    - "'tox.ini' in files"
     reviewers:
       teams:
       - roadies
