@@ -1,4 +1,4 @@
-name: Sync files
+name: Sync files (pull request)
 on:
   push:
     branches:
@@ -23,3 +23,6 @@ jobs:
           GIT_EMAIL: jazzband-bot@users.noreply.github.com
           GIT_USERNAME: jazzband-bot
           DRY_RUN: true
+          OVERWRITE_EXISTING_PR: true
+          SKIP_PR: false
+          CONFIG_PATH: .github/sync/pull-request.yml

@@ -61,6 +61,4 @@ group:
   - jazzband/tablib
   - jazzband/website
   files:
-    - source: configs/.pullapprove.yml
-      dest: .pullapprove.yml
     - CODE_OF_CONDUCT.md

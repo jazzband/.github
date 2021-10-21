@@ -1,0 +1,28 @@
+name: Sync files (push)
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2.3.5
+
+      - name: Run GitHub File Sync
+        uses: BetaHuhn/repo-file-sync-action@v1.15.0
+        with:
+          GH_PAT: ${{ secrets.SYNC_TOKEN }}
+          ASSIGNEES: jezdez
+          COMMIT_PREFIX: "Jazzband:"
+          BRANCH_PREFIX: "jazzband/sync"
+          COMMIT_EACH_FILE: true
+          GIT_EMAIL: jazzband-bot@users.noreply.github.com
+          GIT_USERNAME: jazzband-bot
+          DRY_RUN: true
+          OVERWRITE_EXISTING_PR: true
+          SKIP_PR: true
+          CONFIG_PATH: .github/sync/push.yml
