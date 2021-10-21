@@ -22,7 +22,7 @@ jobs:
           COMMIT_EACH_FILE: true
           GIT_EMAIL: jazzband-bot@users.noreply.github.com
           GIT_USERNAME: jazzband-bot
-          DRY_RUN: true
+          DRY_RUN: false
           OVERWRITE_EXISTING_PR: true
           SKIP_PR: false
           CONFIG_PATH: .github/sync/pull-request.yml
