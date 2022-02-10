@@ -5,4 +5,4 @@ maintaining Python-based projects. It gives maintainers and contributors
 the ability to “play in the same band” instead of being forced into “artist”
 and “audience” roles.
 
-Get started by visiting [https://jazzband.co](https://jazzband.co)!
+Get started by visiting [jazzband.co](https://jazzband.co)!
