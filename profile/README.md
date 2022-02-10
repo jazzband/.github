@@ -1,4 +1,4 @@
-# Welcome to Jazzband 🎸🚀
+# Welcome to Jazzband!
 
 Jazzband is a collaborative community to share the responsibility of
 maintaining Python-based projects. It gives maintainers and contributors
