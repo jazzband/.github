@@ -6,3 +6,14 @@ the ability to “play in the same band” instead of being forced into “artis
 and “audience” roles.
 
 Get started by visiting [jazzband.co](https://jazzband.co)!
+
+And talk to others on Matrix:
+<center>
+
+  [![Matrix Badge]][Matrix Space]
+
+</center>
+
+[Matrix Badge]:
+https://img.shields.io/matrix/jazzband:matrix.org?label=Discuss%20on%20Matrix%20at%20%23jazzband%3Amatrix.org&logo=matrix&server_fqdn=matrix.org&style=for-the-badge
+[Matrix Space]: https://matrix.to/#/%23jazzband:matrix.org
